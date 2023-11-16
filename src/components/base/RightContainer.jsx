@@ -23,14 +23,15 @@ export const RightSide = ({ weatherData }) => {
       <div className="flex justify-center  gap-2 mt-10 relative right-32">
         <div className="flex flex-col justify-center items-center gap-4 rounded-lg p-6 bg-white">
           <img
-            src={weatherData.current.condition.icon}
+            src={weatherData.current?.condition.icon}
+            // src=""
             alt="icon"
             style={{ width: "30px" }}
           />
           <div className="text-xs">Tue</div>
           <div className="text-sm font-bold">
             {" "}
-            {weatherData.current.temp_c} °C
+            {weatherData.current?.temp_c} °C
           </div>
         </div>
 
@@ -40,8 +41,8 @@ export const RightSide = ({ weatherData }) => {
             alt="icon"
             style={{ width: "30px" }}
           />
-          <div className="text-xs">Tue</div>
-          <div className="text-sm font-bold">30 °C</div>
+          <div className="text-xs">Wed</div>
+          <div className="text-sm font-bold">28 °C</div>
         </div>
 
         <div className="flex flex-col justify-center items-center gap-4 rounded-lg p-6 bg-[#272E37]">
@@ -50,14 +51,14 @@ export const RightSide = ({ weatherData }) => {
             alt="icon"
             style={{ width: "30px" }}
           />
-          <div className="text-xs">Tue</div>
-          <div className="text-sm font-bold">30 °C</div>
+          <div className="text-xs">Thu</div>
+          <div className="text-sm font-bold">25 °C</div>
         </div>
 
         <div className="flex flex-col  items-center gap-4 rounded-lg p-6 bg-[#272E37]">
           <img src="./image/Sun.png" alt="icon" style={{ width: "30px" }} />
-          <div className="text-xs">Tue</div>
-          <div className="text-sm font-bold">30 °C</div>
+          <div className="text-xs">Fri</div>
+          <div className="text-sm font-bold">20 °C</div>
         </div>
       </div>
     </div>

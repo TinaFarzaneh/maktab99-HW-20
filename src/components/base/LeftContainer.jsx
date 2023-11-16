@@ -21,12 +21,12 @@ export const LeftContainer = ({ weatherData }) => {
             </div>
           </div>
           <div className="text-white flex flex-col items-center justify-start absolute bottom-5 left-5 gap-5">
-            <img src={weatherData.current.condition.icon} alt="SunImg" />
+            <img src={weatherData.current?.condition.icon} alt="SunImg" />
             <p className="text-5xl font-bold">
-              {weatherData.current.temp_c} °C
+              {weatherData.current?.temp_c} °C
             </p>
             <p className="text-2xl font-semibold">
-              {weatherData.current.condition.text}
+              {weatherData.current?.condition.text}
             </p>
           </div>
         </div>
