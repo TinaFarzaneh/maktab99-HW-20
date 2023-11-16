@@ -1,5 +1,3 @@
-// stopwatchReducer.js
-
 const initialState = {
   time: 0,
   seconds: 0,
